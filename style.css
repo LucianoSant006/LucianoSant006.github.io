@@ -103,6 +103,24 @@ section.top-site .flex{
     color: #00ff08;
     
 }
+
+
+.img-top-site {
+    width: 250px; 
+    height: 250px;  
+    border-radius: 50%; 
+    overflow: hidden;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #fff;  
+}
+
+.img-top-site img {
+    width: 100%; 
+    height: 100%;  
+    object-fit: cover;  
+}
 .top-site .txt-top-site p{
     color: #fff;
     margin: 40px 0;
@@ -128,31 +146,119 @@ section.especialidades{
     padding: 40px 4%;
 }
 
+
+
 section.especialidades .flex{
     gap: 60px;
 }
 
-.especialidades .especialidades-box{
-    color: #fff;
-    padding: 40px;
-    margin-top: 45px;
-    border-radius: 20px;
-    transition: .2s;
-}
+
+    .especialidades .especialidades-box {
+        color: #fff;
+        padding: 40px;
+        margin-top: 45px;
+        border-radius: 20px;
+        transition: .2s;
+        background-color: #00ff08ea;
+        width: 100%;
+    }
 
 .especialidades .especialidades-box:hover{
     transform: scale(1.05);
-    box-shadow: 0 0 8px #ffffff78;
+    box-shadow: 0 0 20px #ffffff78;
 }
 
 
 
 .especialidades .especialidades-box i{
-    font-size: 70px;
+    font-size: 50px;
     color: #00ff08;
 }
 
-.especialidades .especialidades-box h3{
-    font-size: 26px;
-    margin: 15px 0;
+.especialidades .especialidades-box img {
+    width: 100px; 
+    height: auto;
+    margin-bottom: 15px;
 }
+
+
+
+
+.especialidades .titulo-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    gap: 10px; 
+    margin-bottom: 30px; 
+    width: 100%;
+}
+
+.especialidades .titulo-container .imagem-2line{
+    width: 80px; 
+    height: auto;
+}
+.especialidades .titulo-container .imagem-topo{
+    width: 130px; 
+    height: auto;
+}
+.especialidades .titulo-container .titulo-caixa {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Estilos para a segunda linha, onde as imagens ficam lado a lado */
+.especialidades .titulo-container:nth-child(2) {
+    flex-direction: row; /* Coloca as imagens lado a lado */
+    gap: 60px; /* Espaço entre as imagens */
+}
+
+/* Ajuste para os itens da segunda linha */
+.especialidades .titulo-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/*  ESTILO SOBRE */
+section.sobre{
+    padding: 40px 4%;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre{
+    color: #fff;
+}
+
+.sobre .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span{
+    color: #00ff08;
+    display: block;
+}
+
+.sobre .txt-sobre p{
+    margin: 30px 0;
+}
+.sobre .txt-sobre .btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #00ff08;
+    font-size: 22px;
+    cursor: pointer;
+
+}
+
