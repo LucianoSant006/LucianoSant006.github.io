@@ -18,6 +18,22 @@ body{
 
 }
 
+.flex{
+    display: flex;
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #00ff08;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+
+}
+
 
 header{
     padding: 40px 4%;
@@ -50,18 +66,49 @@ header nav ul li{
     padding: 0 40px;
 }
 
-header .btn-contato button{
-    padding: 10px 40px;
-    font-size: 18px;
-    font-weight: 600;
-    background-color: #00ff08;
-    border: 0;
-    border-radius: 30px;
-    cursor: pointer;
 
+
+.btn-contato button:hover{
+    box-shadow: 0px 0px 8px #00ff08;
+    transform: scale(1.05);
+}
+
+section.top-site{
+    padding: 40px 4%;
+}
+
+section.top-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.top-site h1{
+    color: #fff;
+    font-size: 38px;
+    line-height: 40px;
+}
+
+.top-site .txt-top-site h1 span{
+    color: #00ff08;
+    
+}
+.top-site .txt-top-site p{
+    color: #fff;
+    margin: 40px 0;
+}
+
+.top-site .img-top-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
 
 }
 
-header .btn-contato button:hover{
-    box-shadow: 0px 0px 8px #00ff08;
+@keyframes flutuar{
+    0%{
+        top: 0px;
+    }
+    100%{
+        top: 30px;
+    }
 }
