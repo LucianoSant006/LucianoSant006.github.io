@@ -34,6 +34,11 @@ body{
 
 }
 
+button:hover{
+    box-shadow: 0px 0px 8px #00ff08;
+    transform: scale(1.05);
+}
+
 h2.titulo{
     color: #fff;
     font-size: 38px;
@@ -78,10 +83,7 @@ header nav ul li{
 
 
 
-.btn-contato button:hover{
-    box-shadow: 0px 0px 8px #00ff08;
-    transform: scale(1.05);
-}
+
 
 section.top-site{
     padding: 40px 4%;
@@ -225,7 +227,7 @@ section.especialidades .flex{
 
 /*  ESTILO SOBRE */
 section.sobre{
-    padding: 40px 4%;
+    padding: 90px 4%;
 }
 
 section.sobre .flex{
@@ -259,6 +261,33 @@ section.sobre .flex{
     background-color: #00ff08;
     font-size: 22px;
     cursor: pointer;
+    margin: 0 8px;
+    transition: .2s;
 
 }
 
+
+/*  ESTILO PORTFÓLIO */
+section.portifolio{
+    padding: 80px 4%;
+    box-shadow: 0px 0px 40px 10px #ffffff3e;
+}
+
+section.portifolio .flex{
+    justify-content: space-around;
+}
+
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 40px;
+}
+.img-port:hover{
+    background-position: 100% 100%;
+
+
+}
