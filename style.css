@@ -154,7 +154,44 @@ section.especialidades .flex{
     gap: 60px;
 }
 
+/* Style das especialidades azul*/
 
+.especialidades .especialidades-box-azul {
+    color: #0a0a0a;
+    padding: 40px;
+    margin-top: 45px;
+    border-radius: 20px;
+    transition: .2s;
+    background-color: #f6f8f6;
+    width: 100%;
+}
+
+.especialidades .especialidades-box-preto {
+    color: #d81212;
+    padding: 40px;
+    margin-top: 45px;
+    border-radius: 20px;
+    transition: .2s;
+    background-color: #0b0c0b;
+    width: 100%;
+}
+
+    .especialidades .especialidades-box-azul i{
+        font-size: 50px;
+        color:#080808;
+    }
+    
+.especialidades .titulo-container .titulo-caixa-preto {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0c0c0c;
+}
+.especialidades .especialidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ffffff78;
+}
+
+/* Style das especialidades azul*/
     .especialidades .especialidades-box {
         color: #fff;
         padding: 40px;
@@ -169,9 +206,6 @@ section.especialidades .flex{
     transform: scale(1.05);
     box-shadow: 0 0 20px #ffffff78;
 }
-
-
-
 
 
 
@@ -203,10 +237,15 @@ section.especialidades .flex{
     width: 80px; 
     height: auto;
 }
-.especialidades .titulo-container .imagem-topo{
-    width: 130px; 
+.especialidades .titulo-container .imagem-especialidade2-2line{
+    width: 170px; 
     height: auto;
 }
+.especialidades .titulo-container .imagem-topo{
+    width: 170px; 
+    height: auto;
+}
+
 .especialidades .titulo-container .titulo-caixa {
     font-size: 24px;
     font-weight: bold;
