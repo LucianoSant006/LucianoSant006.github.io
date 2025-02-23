@@ -193,12 +193,12 @@ section.especialidades .flex{
 
 /* Style das especialidades azul*/
     .especialidades .especialidades-box {
-        color: #fff;
+        color: #00ff08;
         padding: 40px;
         margin-top: 45px;
         border-radius: 20px;
         transition: .2s;
-        background-color: #00ff08ea;
+        background-color: #000000ea;
         width: 100%;
     }
 
@@ -449,4 +449,83 @@ footer .line-footer p i{
 
 footer .line-footer p a{
     color: #ffffff;
+}
+/* responsividade */
+@media screen and (max-width: 1020px) {
+    /* classes gerais*/
+    h2.titulo{
+        font-size: 34px;
+        line-height: 30px;
+    }
+    .flex{
+        flex-direction: column;
+    }
+    .topo-site .flex{
+        flex-direction: column-reverse;
+    }
+    /* cabeçalho */
+    .menu-desktop, .btn-contato{
+        display: none;
+    }
+    /* topo-site */
+    section.top-site .flex{
+       
+        gap: 40px;
+    }
+    section.top-site{
+        padding: 20px 8%;
+    }
+
+    .top-site h1{
+        font-size: 30px;
+    }
+
+    .top-site .img-top-site img{
+        width: 100% ;
+    
+    }
+   /* sobre*/
+   section.sobre{
+    padding: 80px 8%;
+}
+
+.sobre .txt-sobre h2{
+    font-size: 34px;
+    line-height: 35px;
+    text-align: center;
+}
+    .btn-social{
+        text-align: center;
+    }
+    .img-sobre img{
+        width: 100%;
+    }
+      /* portifolio */
+      section.portifolio{
+        padding: 80px 8%;
+       
+    }
+
+    .img-port{
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    
+    }
+
+    section.portifolio .flex{
+        gap: 60px;
+    }
+       /* rodape */
+
+       footer .flex{
+        flex-direction: column;
+    
+}
+footer .line-footer{
+    text-align: center;
+    
+}
+
+
 }
